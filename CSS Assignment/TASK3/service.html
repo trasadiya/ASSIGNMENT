@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            background-color: #202020;
+            width: 60%;
+            float: left;
+            padding-bottom: 34px;
+        }
+
+        .p2 {
+            width: 40%;
+            background-image: url(bg2.png);
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            float: right;
+            position: relative;
+        }
+
+        .p1 h2 {
+            padding-right: 80px;
+            font-size: 36px;
+            letter-spacing: 4px;
+            color: #f4f5f9;
+            text-align: right;
+            font-weight: 700;
+            padding-top: 82px;
+            font-family: "Source Sans Pro";
+            text-transform: uppercase;
+        }
+
+        .box h4 {
+            font-size: 18px;
+            line-height: 1px;
+            color: #e74c3c;
+            font-weight: 600;
+            font-family: "Open Sans";
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: "Source Sans Pro";
+            text-align: right;
+        }
+
+        span.border {
+            position: absolute;
+            border: 1px solid red;
+            width: 6px;
+            height: 37px;
+            background: red;
+            top: 18%;
+            margin-left: 20px;
+        }
+
+        .box {
+            padding-right: 54px;
+        }
+
+        .one {
+            position: absolute;
+            width: 1px;
+            background-color: #45576e;
+            border: 1px solid #999999;
+            height: 34px;
+            opacity: 0.251;
+            top: 28%;
+            left: 1%;
+        }
+
+        .two {
+            position: absolute;
+
+            background-color: #e74c3c;
+            border: 3px solid #e74c3c;
+            width: 3px;
+            height: 34px;
+            top: 36%;
+            left: 1%;
+            border: none;
+        }
+
+        .three {
+            position: absolute;
+            background-color: #45576e;
+            border: 1px solid #999999;
+            width: 1px;
+            opacity: 0.251;
+            height: 34px;
+            top: 44%;
+            left: 1%;
+        }
+
+        .img-gall {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 26%;
+            left: -4%;
+        }
+
+        .img-gall img {
+            width: 45px;
+            padding-top: 49px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="p1">
+            <div class="scroll">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <h2>Our services <span class="border"></span></h2>
+            <div class="box">
+                <h4>web design</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has <br> been
+                    the
+                    industry's standard dummy text ever.</p>
+            </div>
+            <div class="box">
+                <h4>print design</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has <br> been
+                    the
+                    industry's standard dummy text ever.</p>
+            </div>
+            <div class="box">
+                <h4>photography</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has <br> been
+                    the
+                    industry's standard dummy text ever.</p>
+            </div>
+
+        </div>
+        <div class="p2">
+            <div class="img-gall">
+                <img src="icon1.png" alt="">
+                <img src="icon2.png" alt="">
+                <img src="icon3.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

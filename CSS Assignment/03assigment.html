@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            padding: 70px;
+            /* border: 3px solid black; */
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5);
+            gap: 15px;
+        }
+
+        #two-1 {
+            grid-column: 1/9;
+            grid-row: 1/2;
+            background-image: url(https://www.cambridgeblog.org/wp-content/uploads/2015/05/What-is-an-Animal.jpg);
+            background-position: center;
+            background-size: contain;
+        }
+
+        #two-2 {
+            grid-column: 9/13;
+            grid-row: 1/2;
+            background-image: url(data:image/jpeg;base64,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);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #two-3 {
+            grid-column: 13/15;
+            grid-row: 1/5;
+            background-color: black;
+            color: white;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #two-4 {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            background-image: url(https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/4:3/w_2663,h_1997,c_limit/shouts-animals-watch-baby-hemingway.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #two-5 {
+            grid-column: 3/10;
+            grid-row: 2/3;
+            background-image: url(https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg);
+            background-position: center;
+            background-size: contain;
+        }
+
+        #two-6 {
+            grid-column: 10/13;
+            grid-row: 2/3;
+            background-image: url(https://images.immediate.co.uk/production/volatile/sites/23/2010/07/GettyImages-160869327-0f0732f.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #two-7 {
+            grid-column: 1/7;
+            grid-row: 3/4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhgoVLX5i53sPcz7jxokfb6Kts0bMLYX2xQ&usqp=CAU);
+            background-position: center;
+            background-size: contain;
+        }
+
+        #two-8 {
+            grid-column: 7/13;
+            grid-row: 3/4;
+            background-image: url(https://media.istockphoto.com/id/108348088/photo/red-eyed-tree-frog.jpg?s=612x612&w=0&k=20&c=-6kS86oSlyC2oWCLuDpDFeAxArnUpQ2DcUNlXtRjR04=);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #two-9 {
+            grid-column: 1/5;
+            grid-row: 4/5;
+            background-image: url(https://files.worldwildlife.org/wwfcmsprod/images/A_Pangolin_hunting_for_ants./story_full_width/4fcx4mrl0e_shutterstock_380478340.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #two-10 {
+            grid-column: 5/9;
+            grid-row: 4/5;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfM-RJ4bzboaTHZ8waUVtu1WXkFW5M5bh9A&usqp=CAU);
+            background-position: center;
+            background-size: contain;
+        }
+
+        #two-11 {
+            grid-column: 9/13;
+            grid-row: 4/5;
+            background-image: url(https://static.theprint.in/wp-content/uploads/2019/11/dhole.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="one" id="two-1"></div>
+        <div class="one" id="two-2"></div>
+        <div class="one" id="two-3">
+            <h3>SHUTTER</h3>
+            <ul>
+                <li>Home</li>
+                <li>Photos</li>
+                <li>BIO</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="one" id="two-4"></div>
+        <div class="one" id="two-5"></div>
+        <div class="one" id="two-6"></div>
+        <div class="one" id="two-7"></div>
+        <div class="one" id="two-8"></div>
+        <div class="one" id="two-9"></div>
+        <div class="one" id="two-10"></div>
+        <div class="one" id="two-11">
+        </div>
+    </div>
+</body>
+
+</html>

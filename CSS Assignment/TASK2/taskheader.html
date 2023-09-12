@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            width: 100%;
+            height: 106vh;
+            background-image: url(banner.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style-type: none;
+            padding: 0 20px;
+            display: inline-block;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #f4f5f9;
+
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .content h1 {
+            padding-top: 24px;
+            font-size: 50px;
+        }
+
+        .content p {
+            padding-top: 99px;
+            padding-bottom: 43px;
+            color: #cbc6c0;
+        }
+
+        .content h5 {
+            font-size: 16px;
+            font-weight: 100;
+        }
+
+        button {
+            width: 223px;
+            height: 58px;
+        }
+
+        button.closed {
+            color: white;
+            background: transparent;
+            border: 1px solid white;
+        }
+
+        button.runiing {
+            background: #e74c3c;
+            color: white;
+            border: none;
+        }
+
+        i.fa-sharp.fa-solid.fa-angle-right {
+            position: absolute;
+            left: 97%;
+            font-size: 29px;
+            background: #e74c3c;
+            width: 27px;
+            color: white;
+            height: 30px;
+        }
+
+        i.fa-sharp.fa-solid.fa-angle-left {
+            position: absolute;
+            left: 1%;
+            font-size: 29px;
+            color: black;
+            background: #716a64;
+            width: 27px;
+            height: 30px;
+        }
+
+        .one {
+            width: 80px;
+            border: 1px solid #998d83;
+            position: absolute;
+            left: 11px;
+            top: 0;
+        }
+
+        img.icons {
+            width: 42px;
+            position: absolute;
+            top: 149%;
+            left: 48%;
+        }
+
+        .box img {
+            height: 73px;
+            width: 75px;
+        }
+
+        .fenil {
+            width: 89%;
+            position: relative;
+            display: flex;
+            margin-top: 117px;
+            margin-left: 137px;
+        }
+
+        .box {
+            width: 241px;
+            text-align: center;
+            margin-left: 24px;
+            position: relative;
+        }
+
+        .box img {
+            height: 73px;
+            width: 75px;
+            margin-bottom: 29px;
+        }
+
+        .box h3 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #6a6a6a;
+            font-weight: 600;
+            font-family: "Open Sans";
+            margin-bottom: 38px;
+        }
+
+        span.red {
+            color: #e74c3c;
+        }
+
+        .box p {
+            width: 255px;
+            height: 70px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #999999;
+            font-weight: 300;
+            font-family: "Source Sans Pro";
+            text-align: center;
+        }
+
+        .border {
+            position: absolute;
+            left: 40%;
+            display: inline-flex;
+            top: 41%;
+        }
+
+        .two {
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            border-radius: 3px;
+            background-color: #e74c3c;
+            top: -2px;
+            right: -104px;
+        }
+
+        .three {
+            border: 1px solid #998d83;
+            width: 80px;
+            height: 1px;
+            position: absolute;
+            left: 109px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h5>Our Clients Are Our First Priority</h5>
+            <h1>WELCOME TO SKY</h1>
+
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            <i class="fa-sharp fa-solid fa-angle-right"></i>
+            <div class="border">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<br>has been the
+                industry's standard dummy text ever since the 1500s, when an unknown<br>printer took a galley of type
+                and
+                scrambled it to make a type specimen book.
+            </p>
+            <button class="runiing">GET STARTED NOW</button>
+            <button class="closed">LEARN MORE</button>
+            <img src="icon1.png" alt="" class="icons">
+        </div>
+    </div>
+    <div class="fenil">
+        <div class="box">
+            <img src="i1.png" alt="">
+            <h3><span class="red">SLEEK DESIGN</span></h3>
+            <div class="border"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+            </p>
+        </div>
+        <div class="box">
+            <img src="i2.png" alt="">
+            <h3>SLEEK DESIGN</h3>
+            <div class="border"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+            </p>
+        </div>
+        <div class="box">
+            <img src="i3.png" alt="">
+            <h3>SLEEK DESIGN</h3>
+            <div class="border"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+            </p>
+        </div>
+        <div class="box">
+            <img src="i4.png" alt="">
+            <h3>SLEEK DESIGN</h3>
+            <div class="border"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
